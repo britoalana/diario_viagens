@@ -1,0 +1,19 @@
+<h1>Minhas viagens</h1>
+<div class="viagens_container">
+
+    {{#each viagens}}
+    <div>
+        🛫 {{this.id}} -
+
+        <span>
+            Destino:
+            <a href="/viagens/{{this.id}}">{{this.destino}},</a>
+        </span>
+        <p>Viagem realizada por: {{this.nome}},
+       data voo: {{this.dt_voo}}</p>
+    </div>
+
+
+    {{/each}}
+
+</div>

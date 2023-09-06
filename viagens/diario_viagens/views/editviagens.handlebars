@@ -1,0 +1,17 @@
+<h1 class="title">Editar viagens: </h1>
+<form action="/viagens/updateviagem" method="post">
+<input type="hidden" name="id" value="{{viagem.id}}">
+
+<div class="form_control"><label for="nome">Realizada por:</label><input type="text" name="nome" placeholder="Digite o seu nome" value="{{viagem.nome}}"></div>
+
+    <div class="form_control"><label for="destino">Destino:</label><input type="text" name="destino" placeholder="Digite o destino da viagem" value="{{viagem.destino}}"></div>
+
+    <div class="form_control"><label for="dt_voo">Data voo:</label><input type="text" name="dt_voo" placeholder="Digite a data do voo" value="{{viagem.dt_voo}}"></div>
+
+    <div class="form_control"><label for="pt_positivos">Pontos positivos da viagem:</label><input type="text" name="pt_positivos" placeholder="Digite os pontos positivos" value="{{viagem.pt_positivos}}"></div>
+
+    <div class="form_control"><label for="pt_negativos">Pontos negativos da viagem:</label><input type="text" name="pt_negativos" placeholder="Digite os pontos negativos" value="{{viagem.pt_negativos}}"></div>
+
+     <div class="form-control">
+        <input type="submit" value="Editar"></div>
+</form>
